@@ -33,6 +33,26 @@
 @media(max-width:720px){.container{width:calc(100% - 32px)}.contact-link{min-width:0}.nav-wrap{min-height:70px}.menu-toggle{display:block}.nav-links{position:absolute;top:69px;left:16px;right:16px;display:none;align-items:stretch;gap:0;padding:10px;border:1px solid var(--line);border-radius:18px;background:var(--paper);box-shadow:var(--shadow)}.nav-links.open{display:flex;flex-direction:column}.nav-links a{display:block;padding:13px}.nav-links .nav-cta{margin-top:5px;text-align:center}.hero{padding:45px 0 32px}.hero-grid,.intro-grid,.approach-grid,.contact-panel{grid-template-columns:1fr;gap:28px}.hero-copy{padding:10px 0 0}h1{font-size:clamp(3rem,14vw,4.4rem)}.hero-visual{min-height:380px;margin-top:5px}.hero-image{inset:0 22px 26px 12px;border-radius:44% 44% 15px 15px}.image-note{width:230px;padding:17px}.strip .container{justify-content:center;text-align:center;gap:10px 14px}.strip span{font-size:.67rem}.section{padding:68px 0}.section-head{display:block;margin-bottom:28px}.section-head p{margin-top:12px}.intro-aside{padding:24px}.service-grid,.project-grid{grid-template-columns:1fr}.service-card{min-height:0;padding:24px}.service-number{margin-bottom:22px}.project-content{padding:21px}.contact{padding:68px 0}.footer-inner{flex-direction:column;align-items:flex-start}.footer-links{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
 
+/* Servicio destacado de desarrollo web */
+.web-offer{padding:100px 0;background:var(--sage)}
+.web-offer-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,6vw,82px);align-items:start}
+.web-offer-copy{position:sticky;top:120px}
+.web-offer-copy h2{margin:18px 0}
+.web-offer-lead{max-width:540px;color:#50594c;font-size:1.1rem;margin:0 0 26px}
+.web-offer-note{margin:14px 0 0;color:var(--muted);font-size:.85rem}
+.web-offer-details{padding:30px;border:1px solid #43513b35;border-radius:var(--radius);background:var(--paper);box-shadow:var(--shadow)}
+.web-offer-intro{display:flex;align-items:flex-start;gap:16px;padding-bottom:23px;border-bottom:1px solid var(--line)}
+.web-offer-symbol{display:grid;place-items:center;flex:0 0 48px;width:48px;height:48px;border-radius:15px;background:var(--olive);color:white;font-size:1.5rem}
+.web-offer-intro strong{display:block;font-size:1.15rem}
+.web-offer-intro p,.web-benefits p{margin:5px 0 0;color:var(--muted);font-size:.92rem}
+.web-benefits{list-style:none;margin:0;padding:0}
+.web-benefits li{display:grid;grid-template-columns:38px 1fr;gap:14px;padding:20px 0;border-bottom:1px solid var(--line)}
+.web-benefits li>span{color:var(--olive);font:1.35rem "League Spartan",serif}
+.web-benefits strong{display:block;line-height:1.3}
+.web-offer-tagline{margin-top:22px;padding:14px 16px;border-radius:12px;background:var(--cream);color:var(--olive);font-weight:700;font-size:.88rem}
+@media(max-width:900px){.web-offer-grid{gap:35px}}
+@media(max-width:720px){.web-offer{padding:68px 0}.web-offer-grid{grid-template-columns:1fr;gap:26px}.web-offer-copy{position:static}.web-offer-details{padding:22px}.web-offer-lead{font-size:1rem}}
+
 /* Ajustes de tipografía, iconos y formulario de contacto */
 .contact-icon{display:flex!important;align-items:center!important;justify-content:center!important;flex:0 0 44px!important;width:44px!important;height:44px!important;padding:0!important;line-height:0!important;float:none!important;position:static!important;transform:none!important}
 .contact-icon svg{display:block!important;flex:0 0 22px;width:22px;height:22px;margin:0!important;position:static!important}
@@ -58,7 +78,7 @@
 <header class="site-header"><div class="container nav-wrap">
 <a class="brand" href="#inicio" aria-label="Amelia Comunica Agro, inicio"><span class="brand-mark">a.</span><span><span class="brand-name">Amelia Comunica Agro</span><span class="brand-sub">Marketing · Comunicación · Agro</span></span></a>
 <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
-<nav aria-label="Navegación principal"><ul class="nav-links" id="navLinks"><li><a href="#sobre-mi">Sobre mí</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#proyectos">Proyectos</a></li><li><a class="nav-cta" href="https://wa.me/5491137726449?text=Hola%2C%20Amelia.%20Quisiera%20hacerte%20una%20consulta%20sobre%20tus%20servicios." target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp ↗</a></li></ul></nav>
+<nav aria-label="Navegación principal"><ul class="nav-links" id="navLinks"><li><a href="#sobre-mi">Sobre mí</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#sitios-web">Sitios web</a></li><li><a href="#proyectos">Proyectos</a></li><li><a class="nav-cta" href="https://wa.me/5491137726449?text=Hola%2C%20Amelia.%20Quisiera%20hacerte%20una%20consulta%20sobre%20tus%20servicios." target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp ↗</a></li></ul></nav>
 </div></header>
 <main>
 <section class="hero" id="inicio"><div class="container hero-grid"><div class="hero-copy">
@@ -79,6 +99,24 @@
 <article class="service-card reveal"><span class="service-number">06</span><h3>Contenido técnico agropecuario</h3><p>Comunicación de temas del agro con atención al contexto productivo, el lenguaje y el público.</p></article>
 <article class="service-card reveal"><span class="service-number">07</span><h3>Sitios web y presencia digital</h3><p>Desarrollo de sitios web claros y funcionales para presentar una empresa, sus soluciones y sus canales de contacto.</p></article>
 </div></div></section>
+<section class="web-offer" id="sitios-web"><div class="container web-offer-grid">
+  <div class="web-offer-copy"><span class="eyebrow">Servicio destacado · Desarrollo web</span>
+    <h2>Tu empresa agropecuaria también necesita una <em>buena presencia digital.</em></h2>
+    <p class="web-offer-lead">Diseño sitios web para empresas del agro que necesitan presentar sus productos y servicios, transmitir confianza y facilitar nuevas consultas comerciales.</p>
+    <a class="btn" href="https://wa.me/5491137726449?text=Hola%2C%20Amelia.%20Me%20interesa%20consultarte%20por%20el%20desarrollo%20de%20un%20sitio%20web%20para%20mi%20empresa%20agropecuaria." target="_blank" rel="noopener noreferrer">Consultar por mi sitio web ↗</a>
+    <p class="web-offer-note">Una propuesta adaptada a tu empresa, tus objetivos y tus clientes.</p>
+  </div>
+  <div class="web-offer-details">
+    <div class="web-offer-intro"><span class="web-offer-symbol">↗</span><div><strong>Una web que trabaja por tu negocio</strong><p>Más que una tarjeta de presentación: un lugar propio para explicar qué hacés y cómo pueden contactarte.</p></div></div>
+    <ul class="web-benefits">
+      <li><span>01</span><div><strong>Presentación profesional</strong><p>Tu empresa, trayectoria, productos y servicios organizados con claridad.</p></div></li>
+      <li><span>02</span><div><strong>Diseño adaptable a celulares</strong><p>Una experiencia clara tanto desde el teléfono como desde la computadora.</p></div></li>
+      <li><span>03</span><div><strong>Contacto directo</strong><p>Accesos a WhatsApp, email y formularios para facilitar las consultas.</p></div></li>
+      <li><span>04</span><div><strong>Comunicación con mirada agro</strong><p>Mensajes pensados para explicar soluciones técnicas y transmitir valor comercial.</p></div></li>
+    </ul>
+    <div class="web-offer-tagline">Conocimiento del agro + estrategia + presencia digital</div>
+  </div>
+</div></section>
 <section class="section projects" id="proyectos"><div class="container"><div class="section-head"><div><span class="eyebrow">Trabajo y experiencia</span><h2>Proyectos que llevan las ideas <em>a la práctica.</em></h2></div><p>Una selección de trabajos y líneas de desarrollo en comunicación, contenidos y presencia digital. Los casos conceptuales se identificarán como tales.</p></div><div class="project-grid">
 <article class="project-card reveal"><div class="project-image"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=80" alt="Paisaje de campos cultivados" loading="lazy"></div><div class="project-content"><span class="project-type">Comunicación · Marketing digital</span><h3>Amelia Comunica Agro</h3><p>Desarrollo de una marca especializada en comunicación para el agro: posicionamiento, propuesta de valor, identidad y contenidos para empresas y profesionales.</p></div></article>
 <article class="project-card reveal"><a class="project-image project-image-link" href="https://www.allporksrl.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Visitar el sitio web de AllPork"><img src="https://www.allporksrl.com.ar/assets/img/hero-granja.jpg" alt="Imagen principal del sitio web de AllPork" loading="lazy"><span class="project-image-label">Sitio web ↗</span></a><div class="project-content"><span class="project-type">Desarrollo web · Marketing y comunicación</span><h3>AllPork S.R.L.</h3><p>Desarrollo de su presencia digital y trabajo de comunicación para una empresa de equipamiento, montaje y asesoramiento técnico para producciones porcinas y avícolas.</p><a class="project-visit" href="https://www.allporksrl.com.ar/" target="_blank" rel="noopener noreferrer">Visitar sitio web ↗</a></div></article>
