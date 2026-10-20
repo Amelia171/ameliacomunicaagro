@@ -144,6 +144,9 @@
 /* Ajuste final de presentación y conversión: capturas completas sin recortes */
 .case-gallery-new{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start;gap:24px}.case-screen-image{height:auto;aspect-ratio:auto;overflow:hidden;background:#fff}.case-screen-image img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:top}.case-screen{align-self:start}.portfolio-allpork-photo img{object-fit:cover;object-position:center top}.case-web-cta .btn{white-space:normal;text-align:center;line-height:1.25}.case-web-cta .btn:focus-visible,.case-proof a:focus-visible{outline:3px solid #a5b78d;outline-offset:4px}
 @media(max-width:850px){.case-gallery-new{grid-template-columns:1fr;gap:18px}.case-screen-image{aspect-ratio:auto}.case-screen-image img{height:auto}.case-web-cta .btn{width:100%}}
+
+/* Corrección de encuadre: captura secundaria completa, sin zoom ni recortes */
+.case-gallery-new .case-screen{min-width:0;width:100%;overflow:hidden}.case-gallery-new .case-screen-image{display:block;width:100%;height:auto;min-height:0;aspect-ratio:auto;overflow:visible}.case-gallery-new .case-screen-image img{display:block;width:100%;height:auto;min-width:0;max-width:100%;max-height:none;object-fit:contain;object-position:center top;transform:none;filter:none}.case-gallery-new .case-screen:hover img{transform:none}.case-gallery-new .case-screen figcaption{min-width:0}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Portfolio | Amelia Comunica Agro","url":"https://ameliacomunicaagro.com.ar/portfolio.html","description":"Conocé proyectos de Amelia Comunica Agro: desarrollo web y comunicación para AllPork, y un ejercicio conceptual de diseño para Agronomía El Trébol.","isPartOf":{"@type":"WebSite","name":"Amelia Comunica Agro","url":"https://ameliacomunicaagro.com.ar/"}}</script>
 <!-- Google Analytics 4 -->
